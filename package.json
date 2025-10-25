@@ -1,0 +1,14 @@
+{
+  "name": "smart-campus-ecosystem",
+  "version": "1.0.0",
+  "description": "Smart Campus Platform",
+  "scripts": {
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "install-all": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
